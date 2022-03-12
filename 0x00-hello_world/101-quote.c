@@ -1,6 +1,5 @@
 #include <unistd.h>
 /**
- *
  * main - write a phrase to the standard error
  *
  * Return: 1 at the end
