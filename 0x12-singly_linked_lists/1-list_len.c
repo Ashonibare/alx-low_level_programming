@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * list_len - a function ...
+ * list_len - a function .....
  * @h: the list
  *
  * Return: 1 or 0
