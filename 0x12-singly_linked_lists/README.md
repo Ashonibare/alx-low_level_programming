@@ -1,1 +1,1 @@
-Working with singly linked lists and arrays.
+Project on working with singly linked lists and arrays.
