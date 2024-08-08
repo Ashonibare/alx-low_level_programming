@@ -1,1 +1,1 @@
-manipulating bits and using bitwise operators.
+how to manipulate bits and using bitwise operators.
