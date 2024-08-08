@@ -2,11 +2,9 @@
 /**
  * main - alphabet in lowercase, and then uppercase.
  *
- *   *
- *
  * Return: returns zero at the end
  *
- *      */
+ * */
 
 int main(void)
 {
