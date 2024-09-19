@@ -1,7 +1,21 @@
-#!/bin/bash
+#include "lists.h"
+/**
+ * print_dlistint - prints all elements of a dlistint_t list
+ *
+ * @h: the head pointer of the list
+ *
+ * Return: number of nodes in the list
+ */
+size_t print_dlistint(const dlistint_t *h)
+{
+	size_t node_no = 0;
 
-#include <stdio.h>
-#include <stdlib.h>
+	while (h)
+	{
+		node_no += 1;
+		printf("%d\n", h->n);
+		h = h->next;
+	}
 
-typedef struct Node{
-
+	return (node_no);
+}
