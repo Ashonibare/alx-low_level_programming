@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * insert_dnodeint_at_index - Inserts a new node at a given index
+ * insert_dnodeint_at_index - Inserts a new node at a given position
  * in a doubly linked list.
  *
  * @h: Double pointer to the head of the list
@@ -30,12 +30,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 
 	/* If temp is NULL, the index is out of range */
-	if (temp == NULL && idx != count + 1)
+	if (temp == NULL)
 		return (NULL);
-
-	/* If inserting at the end */
-	if (temp->next == NULL)
-		return (add_dnodeint_end(h, n));
 
 	/* Insert in the middle */
 	new_node = malloc(sizeof(dlistint_t));
@@ -46,8 +42,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new_node->next = temp->next;
 	new_node->prev = temp;
 
+	/* Update next node's prev if not inserting at the end */
 	if (temp->next != NULL)
 		temp->next->prev = new_node;
+
 	temp->next = new_node;
 
 	return (new_node);
