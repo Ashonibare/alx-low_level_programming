@@ -18,14 +18,16 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	/* Initialise new node with given value and point it to the head */
 	new->n = n;
 	new->prev = NULL;
-	new->next = *head;
+	new->next = NULL;
 
 	/* update the prev. head node's prev. if it exists */
+	new->next = *head;
 	if (*head != NULL)
+	{
 		(*head)->prev = new;
+	}
 
 	/* Move the head to point to the new node */
 	*head = new;
-
 	return (new);
 }
