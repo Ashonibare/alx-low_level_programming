@@ -7,7 +7,7 @@
  * @b: second integer
  * Return: result of a - b
 */
-int add(int a, int b)
+int sub(int a, int b)
 {
 	return a - b;
 }

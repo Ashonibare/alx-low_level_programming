@@ -7,7 +7,7 @@
  * @b: second integer
  * Return: The remainder of a / b
 */
-int add(int a, int b)
+int mul(int a, int b)
 {
 	return a % b;
 }
