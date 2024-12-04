@@ -1,0 +1,4 @@
+# creating my first makefile using the all rule
+
+all: main.c school.c
+	gcc main.c school.c -o school
